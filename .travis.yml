@@ -1,0 +1,10 @@
+sudo: true
+
+dist: xenial
+arch:
+  - amd64
+  - ppc64le
+language: c++
+
+script:
+  - ./bootstrap && make && sudo make install
